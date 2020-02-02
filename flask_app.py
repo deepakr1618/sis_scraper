@@ -7,6 +7,7 @@ from PIL import Image
 import base64
 import json
 import sys
+import os
 
 app = Flask(__name__)
 storage = Storage()
@@ -50,4 +51,4 @@ def scrapeAndStore(usn , dob):
 
 
 if __name__ == '__main__':
-   app.run()
+   app.run(host="0.0.0.0" , port = int(os.environ.get('PORT' , 5000)))
