@@ -46,11 +46,15 @@ class Storage:
             u'imgSrc' : b64Img
         })
     def storeImage(self , imgPath):
+        doc_ref = self.db.collection(u'attendance').document(str(self.usn))
         # client = self.db
         # bucket = client.bucket("users")
         # blob = bucket.blob(imgPath)
         # blob.upload_from_filename(imgPath)
         # return blob.public_url
         self.firebase.storage().child("images/"+self.usn+".png").put(imgPath)
-        url = self.firebase.storage().child("images/"+self.usn+".png").get_url(None)
+        url = self.firebase.storage().child("images/"+self.usn+".png").get_url()
+        doc_ref.set({
+          u"pic":url
+        })
         return url

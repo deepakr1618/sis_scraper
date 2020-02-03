@@ -2,7 +2,7 @@ from manager.createChart import lightTheme , darkTheme
 from manager.scraper import Parser , Scraper
 from manager.firestore import Storage
 from io import BytesIO
-from flask import Flask
+from flask import Flask , request
 from PIL import Image
 import base64
 import json
@@ -48,6 +48,22 @@ def scrapeAndStore(usn , dob):
     storage.storeAttendance(usn , dob, name , courses , attendance , pp ,b64Img)
     url = storage.storeImage(path)
     return json.dumps({"message":"successs" , "url" : url})
+
+
+
+@app.route("/register")
+def register():
+  data = request.json
+  usn = data['usn']
+  dob = data['dob']
+  ph = data['ph']
+  print(usn , dob , ph)
+  try:
+    storage.storeUsers(usn , dob ,ph)
+    scrapeAndStore(usn , dob)
+    return "ok"
+  except Exception as e:
+    return "failed"
 
 
 if __name__ == '__main__':

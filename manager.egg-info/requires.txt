@@ -1,6 +1,6 @@
 beautifulsoup4
 firebase-admin
-Flask
+flask
 gcloud
 google
 google-api-core
@@ -12,14 +12,10 @@ google-cloud-firestore
 google-cloud-storage
 google-resumable-media
 googleapis-common-protos
-Pillow
-Pyrebase
+pillow
+pyrebase
+requests
 requests-toolbelt
 robobrowser
 virtualenv
 virtualenv-clone
-flask
-google-nucleus
-pyrebase
-jwt
-requests
