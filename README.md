@@ -15,11 +15,11 @@ A simple scraper/bot that can scrape the Student Information System and send the
 - Twilio
 
 
-> **User Interface**
-[![](https://i.ibb.co/GsMqSRx/6ab0d9c3-24e7-4682-a930-980ead638f4d.jpg)]
+### **User Interface** <br>
+![](https://i.ibb.co/GsMqSRx/6ab0d9c3-24e7-4682-a930-980ead638f4d.jpg)
 `
-> **Light Mode**
-![Light Mode](https://i.ibb.co/f0VrkQS/5087c7d9-8704-47a3-9e98-9a42945ddd9d.jpg "Light Mode")
+### **Light Mode** <br>
+![](https://i.ibb.co/f0VrkQS/5087c7d9-8704-47a3-9e98-9a42945ddd9d.jpg "Light Mode")
 
-> **Dark Mode**
-![Dark Mode](https://i.ibb.co/ZK2ktNb/db80a3af-a697-48c4-be5c-efc5f23621f1.jpg "Dark Mode")
+###  **Dark Mode** <br>
+![](https://i.ibb.co/ZK2ktNb/db80a3af-a697-48c4-be5c-efc5f23621f1.jpg "Dark Mode")
